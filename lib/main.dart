@@ -7,6 +7,8 @@ import 'features/Confirm password/presentation/view/Confirm_password_screen.dart
 import 'features/Home/presentation/view/Home.dart';
 import 'features/Login/presentation/view/login.dart';
 import 'features/Register/presentation/view/RegisterScreen.dart';
+import 'features/Request a quote/presentation/view/requset_screen.dart';
+import 'features/details/presentation/view/details_screen.dart';
 import 'features/forgot password/presentation/view/forgot_password.dart';
 import 'features/splash/splach_screen.dart';
 
@@ -37,6 +39,8 @@ class MyApp extends StatelessWidget {
               'CompleteTheDataScreen': (context) =>
                   const CompleteTheDataScreen(),
               'Home': (context) => const Home(),
+              'RequsetScreen': (context) => const RequsetScreen(),
+              'details': (context) => const DetailsScreen(),
             },
           );
         });

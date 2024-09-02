@@ -8,9 +8,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Appcolor.white,
-
-
+      backgroundColor: Color(0xfff1f1f1),
       body: HomeBody(),
     );
   }
