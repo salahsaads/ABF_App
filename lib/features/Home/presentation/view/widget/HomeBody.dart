@@ -46,20 +46,27 @@ class _HomeBodyState extends State<HomeBody> {
                 const SizedBox(
                   width: 10,
                 ),
-                Container(
-                  width: 41.0.w,
-                  height: 41.0.w,
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      width: 3,
-                      color: const Color(0xff1D75B145),
+                GestureDetector(
+                  onTap: () {
+
+                    Navigator.pushNamed(context, 'search');
+                  }
+                  ,
+                  child: Container(
+                    width: 41.0.w,
+                    height: 41.0.w,
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        width: 3,
+                        color: const Color(0xff1D75B145),
+                      ),
+                      color: const Color(
+                          0xffFFFFFF), // You can change this to any color you like
+                      shape: BoxShape.circle,
                     ),
-                    color: const Color(
-                        0xffFFFFFF), // You can change this to any color you like
-                    shape: BoxShape.circle,
+                    child: Center(
+                        child: Image.asset('assets/search-normal_broken.png')),
                   ),
-                  child: Center(
-                      child: Image.asset('assets/search-normal_broken.png')),
                 ),
                 const Spacer(),
                 Text(

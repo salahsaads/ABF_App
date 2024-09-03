@@ -322,6 +322,69 @@ class DetailsScreen extends StatelessWidget {
                         border: Border.all(color: Color(0xff1D75B1))),
                   )
                 ],
+              ),
+              SizedBox(
+                height: MediaQuery.sizeOf(context).height * .02,
+              ),
+              Container(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'إضافة إلى عربة التسوق',
+                      style: GoogleFonts.almarai(
+                          textStyle: TextStyle(
+                              fontSize: 20.sp,
+                              fontWeight: FontWeight.w700,
+                              color: Color(0xffffffff))),
+                    ),
+                    SizedBox(
+                      width: MediaQuery.sizeOf(context).width * .01,
+                    ),
+                    Image.asset('assets/shopping-cart.png')
+                  ],
+                ),
+                width: double.infinity,
+                height: 74.h,
+                decoration: BoxDecoration(
+                    color: Color(0xff1D75B1),
+                    borderRadius: BorderRadius.circular(38.r)),
+              ),
+              SizedBox(
+                height: MediaQuery.sizeOf(context).height * .02,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Text(
+                    'تقييمات المنتج',
+                    style: GoogleFonts.almarai(
+                        textStyle: TextStyle(
+                            fontSize: 14.sp,
+                            fontWeight: FontWeight.w700,
+                            color: Color(0xff000000))),
+                  ),
+                  SizedBox(
+                    width: MediaQuery.sizeOf(context).width * .01,
+                  ),
+                  Icon(Icons.star, color: Colors.amber, size: 25.0),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Text(
+                    'عرض لجميع التقييمات على هذا المنتج',
+                    style: GoogleFonts.almarai(
+                        textStyle: TextStyle(
+                            fontSize: 12.sp,
+                            fontWeight: FontWeight.w400,
+                            color: Color(0xff878383))),
+                  )
+                ],
+              ),
+              SizedBox(
+                height: MediaQuery.sizeOf(context).height * .02,
               )
             ],
           ),

@@ -5,19 +5,22 @@ import 'package:google_fonts/google_fonts.dart';
 import '../app_color/AppColor.dart';
 
 class customTextfield extends StatelessWidget {
-  const customTextfield({
+   customTextfield({
     super.key,
     required this.icon,
     required this.hintText,
     required this.obscureText,
+    required this.controller1,
   });
   final String icon;
   final String hintText;
   final bool obscureText;
+   TextEditingController controller1 = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Container(
       child: TextField(
+        controller:  controller1,
         obscureText: obscureText,
         keyboardType: TextInputType.emailAddress,
         textDirection: TextDirection.rtl,

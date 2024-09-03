@@ -9,13 +9,16 @@ class customTextfield2 extends StatelessWidget {
     super.key,
     required this.hintText,
     required this.obscureText,
+    required this.controller,
   });
   final String hintText;
   final bool obscureText;
+  final TextEditingController controller;
   @override
   Widget build(BuildContext context) {
     return Container(
       child: TextField(
+        controller: controller,
         obscureText: obscureText,
         keyboardType: TextInputType.emailAddress,
         textDirection: TextDirection.rtl,

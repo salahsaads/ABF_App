@@ -5,10 +5,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class RequestScreenbody extends StatelessWidget {
+class RequestScreenbody extends StatefulWidget {
   const RequestScreenbody({
     super.key,
   });
+
+  @override
+  State<RequestScreenbody> createState() => _RequestScreenbodyState();
+}
+
+class _RequestScreenbodyState extends State<RequestScreenbody> {
+  final TextEditingController f_nameController = TextEditingController();
+  final TextEditingController l_nameController = TextEditingController();
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController phoneController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -61,19 +71,19 @@ class RequestScreenbody extends StatelessWidget {
             SizedBox(
               height: MediaQuery.of(context).size.height * .07,
             ),
-            customTextfield2(hintText: 'الاسم الاول', obscureText: false),
+            customTextfield2(controller: f_nameController,   hintText: 'الاسم الاول', obscureText: false),
             SizedBox(
               height: MediaQuery.of(context).size.height * .01,
             ),
-            customTextfield2(hintText: 'الاسم الاخير', obscureText: false),
+            customTextfield2(controller: l_nameController,   hintText: 'الاسم الاخير', obscureText: false),
             SizedBox(
               height: MediaQuery.of(context).size.height * .01,
             ),
-            customTextfield2(hintText: 'البريد الالكتروني', obscureText: false),
+            customTextfield2(  controller: emailController,   hintText: 'البريد الالكتروني', obscureText: false),
             SizedBox(
               height: MediaQuery.of(context).size.height * .01,
             ),
-            customTextfield2(hintText: 'رقم الجوال', obscureText: false),
+            customTextfield2(controller: phoneController,   hintText: 'رقم الجوال', obscureText: false),
             SizedBox(
               height: MediaQuery.of(context).size.height * .01,
             ),

@@ -6,10 +6,26 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../../core/widget/customtextfield.dart';
 
-class ConfirmPasswordScreenBody extends StatelessWidget {
+class ConfirmPasswordScreenBody extends StatefulWidget {
   const ConfirmPasswordScreenBody({
     super.key,
   });
+
+  @override
+  State<ConfirmPasswordScreenBody> createState() => _ConfirmPasswordScreenBodyState();
+}
+
+class _ConfirmPasswordScreenBodyState extends State<ConfirmPasswordScreenBody> {
+  final TextEditingController passwordController = TextEditingController();
+
+  final TextEditingController confirmPasswordController = TextEditingController();
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+    passwordController.dispose();
+    confirmPasswordController.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +63,8 @@ class ConfirmPasswordScreenBody extends StatelessWidget {
           ),
           Padding(
             padding: EdgeInsets.only(left: 30.w, right: 30.w),
-            child: const customTextfield(
+            child:  customTextfield(
+              controller1:passwordController ,
               icon: 'assets/twotone.png',
               hintText: 'كلمة المرور الجديدة',
               obscureText: true,
@@ -58,7 +75,8 @@ class ConfirmPasswordScreenBody extends StatelessWidget {
           ),
           Padding(
             padding: EdgeInsets.only(left: 30.w, right: 30.w),
-            child: const customTextfield(
+            child:  customTextfield(
+              controller1: confirmPasswordController,
               icon: 'assets/twotone.png',
               hintText: 'تأكيد كلمة المرور الجديدة',
               obscureText: true,

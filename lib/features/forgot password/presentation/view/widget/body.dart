@@ -7,10 +7,23 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../../core/widget/customtextfield.dart';
 
-class ForgotPasswordBody extends StatelessWidget {
+class ForgotPasswordBody extends StatefulWidget {
   const ForgotPasswordBody({
     super.key,
   });
+
+  @override
+  State<ForgotPasswordBody> createState() => _ForgotPasswordBodyState();
+}
+
+class _ForgotPasswordBodyState extends State<ForgotPasswordBody> {
+  final TextEditingController emailController = TextEditingController();
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+    emailController.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +58,8 @@ class ForgotPasswordBody extends StatelessWidget {
           ),
           Padding(
             padding: EdgeInsets.only(left: 33.w, right: 33.w),
-            child: const customTextfield(
+            child: customTextfield(
+              controller1: emailController,
               icon: 'assets/sms-tracking.png',
               hintText: 'ادخل البريي الالكتروني',
               obscureText: false,
@@ -57,7 +71,10 @@ class ForgotPasswordBody extends StatelessWidget {
           GestureDetector(
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return const CodeVerificationScreen(completeDataScreen: false);
+                return CodeVerificationScreen(
+                  completeDataScreen: false,
+                  email: emailController.text.trim(),
+                );
               }));
             },
             child: const CustomButttom(
