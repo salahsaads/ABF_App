@@ -1,3 +1,4 @@
+import 'package:abf_app/features/splash/widget/splach_body.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -35,7 +36,6 @@ class MyApp extends StatelessWidget {
               '/splash': (context) => SplashScreen(),
               'Login': (context) => const Login(),
               'ForgotPassword': (context) => const ForgotPassword(),
-              'Confirm_password': (context) => const ConfirmPasswordScreen(),
               'Register': (context) => const RegisterScreen(),
               'Home': (context) => const Home(),
               'RequsetScreen': (context) => const RequsetScreen(),

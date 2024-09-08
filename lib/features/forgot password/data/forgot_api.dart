@@ -1,11 +1,10 @@
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
-Future<String> check({
+Future<String> sendOtp({
   required String email,
-  required String otp,
 }) async {
-  final url = 'https://albakr-ac.com/api/check/otp?email=$email&otp=$otp';
+  final url = 'https://albakr-ac.com/api/send/otp?email=$email';
 
   final response = await http.get(
     Uri.parse(url),
@@ -13,19 +12,19 @@ Future<String> check({
       'Content-Type': 'application/json',
     },
   );
-  final data = json.decode(response.body);
 
   try {
     if (response.statusCode == 200) {
-      return data['message'];
+      final data = json.decode(response.body);
+      return 'success';
     } else if (response.statusCode == 401) {
       // Handle 401 Unauthorized separately
-      return data['message'];
+      throw Exception('Unauthorized: Please check your token or log in again.');
     } else {
-      return data['message'];
+      throw Exception('Failed: ${response.statusCode}');
     }
   } catch (e) {
     print('Error $e');
-    return data['message'];
+    throw Exception('Error  $e');
   }
 }

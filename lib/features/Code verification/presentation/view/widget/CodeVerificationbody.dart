@@ -5,6 +5,7 @@ import 'package:abf_app/core/widget/CustomImage.dart';
 import 'package:abf_app/features/Code%20verification/cubit/codecheck_cubit.dart';
 import 'package:abf_app/features/Code%20verification/presentation/view/widget/CustomOTP.dart';
 import 'package:abf_app/features/Complete_the_data/presentation/view/Complete_the_data_screen.dart';
+import 'package:abf_app/features/Confirm%20password/presentation/view/Confirm_password_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -38,8 +39,16 @@ class _CodeVerificationBodyState extends State<CodeVerificationBody> {
                 );
               }));
             } else {
-              Navigator.pushNamed(context, 'Confirm_password');
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return ConfirmPasswordScreen(
+                  email: widget.email,
+                  code: code!,
+                );
+              }));
             }
+          } else if (state is CodecheckError) {
+            ScaffoldMessenger.of(context)
+                .showSnackBar(SnackBar(content: Text(state.message)));
           }
         },
         builder: (context, state) {

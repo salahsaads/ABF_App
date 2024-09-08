@@ -26,18 +26,16 @@ class ApiSignUp {
           "Content-Type": "application/json",
         },
       );
+      var jsonResponse = json.decode(response.body);
 
       if (response.statusCode == 200) {
-        var jsonResponse = json.decode(response.body);
-
         prefs.setBool('user', true);
         print('done');
         return 'User SignUp';
       } else {
         // Print the response body to understand the error better.
-        print('Failed to sign up: ${response.statusCode}');
-        print('Response body: ${response.body}');
-        return 'Failed to sign up: ${response.statusCode}';
+
+        return jsonResponse['message'];
       }
     } catch (e) {
       print('Error occurred: $e');
