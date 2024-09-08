@@ -72,7 +72,7 @@ class _CodeVerificationBodyState extends State<CodeVerificationBody> {
                 ),
                 Text(
                   textAlign: TextAlign.center,
-                  'Salah@gmail.com',
+                  '${widget.email}',
                   style: GoogleFonts.almarai(
                     textStyle: TextStyle(
                         fontSize: 16.sp,

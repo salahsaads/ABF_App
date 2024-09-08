@@ -577,9 +577,14 @@ class _CustomitembodyState extends State<Customitembody> {
                 ),
               ),
               const Spacer(),
-              const Icon(
-                Icons.arrow_forward,
-                color: Color(0xff1D75B1),
+              GestureDetector(
+                onTap: () {
+                  Navigator.pop(context);
+                },
+                child: const Icon(
+                  Icons.arrow_forward,
+                  color: Color(0xff1D75B1),
+                ),
               ),
             ],
           ),

@@ -30,7 +30,7 @@ class ApiSignUp {
       if (response.statusCode == 200) {
         var jsonResponse = json.decode(response.body);
 
-        prefs.setString('user', email);
+        prefs.setBool('user', true);
         print('done');
         return 'User SignUp';
       } else {
