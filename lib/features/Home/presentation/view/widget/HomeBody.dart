@@ -58,7 +58,7 @@ class _HomeBodyState extends State<HomeBody> {
                     decoration: BoxDecoration(
                       border: Border.all(
                         width: 3,
-                        color: const Color(0xff1D75B145),
+                        color: const Color(0xff1d75b145),
                       ),
                       color: const Color(
                           0xffFFFFFF), // You can change this to any color you like

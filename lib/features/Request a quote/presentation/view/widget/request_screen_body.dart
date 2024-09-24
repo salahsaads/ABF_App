@@ -29,7 +29,7 @@ class _RequestScreenbodyState extends State<RequestScreenbody> {
           children: [
             Row(
               children: [
-                Spacer(),
+                const Spacer(),
                 Text(
                   'طلب عرض سعر',
                   style: GoogleFonts.almarai(
@@ -39,7 +39,7 @@ class _RequestScreenbodyState extends State<RequestScreenbody> {
                         color: const Color(0xff000000)),
                   ),
                 ),
-                Spacer(),
+                const Spacer(),
                 GestureDetector(
                   onTap: () {
                     Navigator.pop(context);
@@ -88,6 +88,11 @@ class _RequestScreenbodyState extends State<RequestScreenbody> {
               height: MediaQuery.of(context).size.height * .01,
             ),
             Container(
+              width: double.infinity,
+              height: 69.h,
+              decoration: BoxDecoration(
+                  color: const Color(0xffF7F7F7),
+                  borderRadius: BorderRadius.circular(33.r)),
               child: Padding(
                 padding: EdgeInsets.only(right: 40.w),
                 child: Row(
@@ -106,16 +111,16 @@ class _RequestScreenbodyState extends State<RequestScreenbody> {
                   ],
                 ),
               ),
-              width: double.infinity,
-              height: 69.h,
-              decoration: BoxDecoration(
-                  color: Color(0xffF7F7F7),
-                  borderRadius: BorderRadius.circular(33.r)),
             ),
             SizedBox(
               height: MediaQuery.of(context).size.height * .01,
             ),
             Container(
+              width: double.infinity,
+              height: 150.h,
+              decoration: BoxDecoration(
+                  color: const Color(0xffF7F7F7),
+                  borderRadius: BorderRadius.circular(33.r)),
               child: TextField(
                 keyboardType: TextInputType.emailAddress,
                 textDirection: TextDirection.rtl,
@@ -139,16 +144,11 @@ class _RequestScreenbodyState extends State<RequestScreenbody> {
                   ),
                 ),
               ),
-              width: double.infinity,
-              height: 150.h,
-              decoration: BoxDecoration(
-                  color: Color(0xffF7F7F7),
-                  borderRadius: BorderRadius.circular(33.r)),
             ),
             SizedBox(
               height: MediaQuery.of(context).size.height * .05,
             ),
-            CustomButttom(text: 'إرسال الطلب'),
+            const CustomButttom(text: 'إرسال الطلب'),
             SizedBox(
               height: MediaQuery.of(context).size.height * .05,
             ),

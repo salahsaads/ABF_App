@@ -81,7 +81,7 @@ class _CodeVerificationBodyState extends State<CodeVerificationBody> {
                 ),
                 Text(
                   textAlign: TextAlign.center,
-                  '${widget.email}',
+                  widget.email,
                   style: GoogleFonts.almarai(
                     textStyle: TextStyle(
                         fontSize: 16.sp,
@@ -122,7 +122,7 @@ class _CodeVerificationBodyState extends State<CodeVerificationBody> {
                     textStyle: TextStyle(
                         fontSize: 16.sp,
                         fontWeight: FontWeight.w400,
-                        color: Color(0xff878383)),
+                        color: const Color(0xff878383)),
                   ),
                 ),
                 SizedBox(
@@ -137,7 +137,7 @@ class _CodeVerificationBodyState extends State<CodeVerificationBody> {
                         alignment: Alignment.center,
                         transform: Matrix4.rotationY(
                             3.14), // Flips the icon horizontally
-                        child: Icon(
+                        child: const Icon(
                           Icons.replay,
                           color: Appcolor.ButtonColor,
                         ),

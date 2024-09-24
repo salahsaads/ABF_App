@@ -3,6 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class PageViewWithIndicator extends StatefulWidget {
+  const PageViewWithIndicator({super.key});
+
   @override
   _PageViewWithIndicatorState createState() => _PageViewWithIndicatorState();
 }
@@ -106,7 +108,7 @@ class _PageViewWithIndicatorState extends State<PageViewWithIndicator> {
                     color: Colors.blue,
                     borderRadius: BorderRadius.circular(38.r),
                   ),
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       'Page 3',
                       style: TextStyle(color: Colors.white, fontSize: 20),
@@ -118,7 +120,7 @@ class _PageViewWithIndicatorState extends State<PageViewWithIndicator> {
                     color: Colors.blue,
                     borderRadius: BorderRadius.circular(38.r),
                   ),
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       'Page 3',
                       style: TextStyle(color: Colors.white, fontSize: 20),
@@ -130,7 +132,7 @@ class _PageViewWithIndicatorState extends State<PageViewWithIndicator> {
                     color: Colors.blue,
                     borderRadius: BorderRadius.circular(38.r),
                   ),
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       'Page 3',
                       style: TextStyle(color: Colors.white, fontSize: 20),
@@ -148,7 +150,7 @@ class _PageViewWithIndicatorState extends State<PageViewWithIndicator> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: List<Widget>.generate(5, (int index) {
                 return AnimatedContainer(
-                  duration: Duration(milliseconds: 300),
+                  duration: const Duration(milliseconds: 300),
                   margin: EdgeInsets.symmetric(horizontal: 2.w),
                   height: 12.h,
                   width: _currentPage == index ? 36.w : 10.w,

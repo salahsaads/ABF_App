@@ -62,7 +62,7 @@ class CustomListView extends StatelessWidget {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => Customitemscreen(),
+                    builder: (context) => const Customitemscreen(),
                   ));
             },
             child: CustomItem(

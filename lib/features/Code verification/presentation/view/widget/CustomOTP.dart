@@ -12,11 +12,11 @@ class CustomOtpTextField extends StatefulWidget {
   final void Function(String)? onCodeChanged;
 
   const CustomOtpTextField({
-    Key? key,
+    super.key,
     required this.numberOfFields,
     required this.onSubmit,
     this.onCodeChanged,
-  }) : super(key: key);
+  });
 
   @override
   _CustomOtpTextFieldState createState() => _CustomOtpTextFieldState();

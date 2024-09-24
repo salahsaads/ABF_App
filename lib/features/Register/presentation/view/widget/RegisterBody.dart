@@ -77,7 +77,7 @@ class _RegisterBodyState extends State<RegisterBody> {
                       textStyle: TextStyle(
                           fontSize: 16.sp,
                           fontWeight: FontWeight.w400,
-                          color: Color(0xff878383)),
+                          color: const Color(0xff878383)),
                     ),
                   ),
                   SizedBox(
@@ -110,7 +110,7 @@ class _RegisterBodyState extends State<RegisterBody> {
                       textStyle: TextStyle(
                           fontSize: 16.sp,
                           fontWeight: FontWeight.w400,
-                          color: Color(0xff878383)),
+                          color: const Color(0xff878383)),
                     ),
                   ),
                   SizedBox(

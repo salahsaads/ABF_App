@@ -73,7 +73,7 @@ class _LoginBodyState extends State<LoginBody> {
                       textStyle: TextStyle(
                           fontSize: 16.sp,
                           fontWeight: FontWeight.w400,
-                          color: Color(0xff878383)),
+                          color: const Color(0xff878383)),
                     ),
                   ),
                   SizedBox(
@@ -133,7 +133,7 @@ class _LoginBodyState extends State<LoginBody> {
                       textStyle: TextStyle(
                           fontSize: 16.sp,
                           fontWeight: FontWeight.w400,
-                          color: Color(0xff878383)),
+                          color: const Color(0xff878383)),
                     ),
                   ),
                   SizedBox(

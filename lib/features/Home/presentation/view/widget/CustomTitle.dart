@@ -32,7 +32,7 @@ class CustomTitle extends StatelessWidget {
           ),
           const Spacer(),
           Text(
-            '$title',
+            title,
             style: GoogleFonts.almarai(
               textStyle: TextStyle(
                 fontSize: 18.sp,

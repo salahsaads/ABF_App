@@ -528,6 +528,11 @@ class _CustomitembodyState extends State<Customitembody> {
                           ),
                           Container(
                             alignment: Alignment.center,
+                            width: double.infinity,
+                            height: 65.h,
+                            decoration: BoxDecoration(
+                                color: const Color(0xff1D75B1),
+                                borderRadius: BorderRadius.circular(35.r)),
                             child: Text(
                               'فلترة',
                               style: GoogleFonts.almarai(
@@ -537,11 +542,6 @@ class _CustomitembodyState extends State<Customitembody> {
                                     color: const Color(0xffffffff)),
                               ),
                             ),
-                            width: double.infinity,
-                            height: 65.h,
-                            decoration: BoxDecoration(
-                                color: const Color(0xff1D75B1),
-                                borderRadius: BorderRadius.circular(35.r)),
                           )
                         ]),
                       ),

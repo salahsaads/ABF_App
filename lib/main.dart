@@ -31,9 +31,9 @@ class MyApp extends StatelessWidget {
         // Use builder only if you need to use library outside ScreenUtilInit context
         builder: (_, child) {
           return MaterialApp(
-            home: SplashScreen(),
+            home: const SplashScreen(),
             routes: {
-              '/splash': (context) => SplashScreen(),
+              '/splash': (context) => const SplashScreen(),
               'Login': (context) => const Login(),
               'ForgotPassword': (context) => const ForgotPassword(),
               'Register': (context) => const RegisterScreen(),

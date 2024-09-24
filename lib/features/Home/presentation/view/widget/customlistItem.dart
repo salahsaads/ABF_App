@@ -17,8 +17,8 @@ class CustomListItem extends StatelessWidget {
           height: 250.h, // Fixed height for each item
           decoration: BoxDecoration(
             color: Colors.white,
-            boxShadow: [
-              const BoxShadow(
+            boxShadow: const [
+              BoxShadow(
                 color: Color(0xfff1f1f1), // Adjust opacity if needed
                 blurRadius: 60, // equivalent to 60px blur
                 spreadRadius: 3, // equivalent to 3px spread

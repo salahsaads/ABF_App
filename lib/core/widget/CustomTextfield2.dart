@@ -23,7 +23,7 @@ class customTextfield2 extends StatelessWidget {
         keyboardType: TextInputType.emailAddress,
         textDirection: TextDirection.rtl,
         decoration: InputDecoration(
-          suffixIcon: Container(
+          suffixIcon: SizedBox(
             width: 1.w,
             height: 60.h,
           ),
@@ -31,7 +31,7 @@ class customTextfield2 extends StatelessWidget {
           prefixIcon: obscureText
               ? Padding(
                   padding: EdgeInsets.only(left: 35.w),
-                  child: Icon(
+                  child: const Icon(
                     Icons.visibility,
                     color: Color(0xffA5A5A5),
                   ),
@@ -42,12 +42,12 @@ class customTextfield2 extends StatelessWidget {
           border: OutlineInputBorder(
               borderSide: BorderSide.none,
               borderRadius: BorderRadius.circular(33.r)),
-          hintText: '$hintText',
+          hintText: hintText,
           hintStyle: GoogleFonts.almarai(
             textStyle: TextStyle(
                 fontSize: 16.sp,
                 fontWeight: FontWeight.w700,
-                color: Color(0xff878383)),
+                color: const Color(0xff878383)),
           ),
         ),
       ),

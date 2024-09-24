@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:abf_app/core/app_color/AppColor.dart';
 import 'package:abf_app/features/splash/widget/splach_body.dart';
 
 class SplashScreen extends StatefulWidget {

@@ -31,7 +31,7 @@ class _SearchScreenbodyState extends State<SearchScreenbody> {
               ),
               GestureDetector(
                 onTap: () => Navigator.pop(context),
-                child: Icon(
+                child: const Icon(
                   Icons.arrow_forward,
                   color: Appcolor.ButtonColor,
                 ),
@@ -46,7 +46,7 @@ class _SearchScreenbodyState extends State<SearchScreenbody> {
             height: 70.h,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(33.r),
-              color: Color(0xffF7F7F7),
+              color: const Color(0xffF7F7F7),
             ),
             child: Padding(
               padding: EdgeInsets.symmetric(
@@ -69,7 +69,7 @@ class _SearchScreenbodyState extends State<SearchScreenbody> {
                               style: GoogleFonts.almarai(
                                   fontSize: 12.sp,
                                   fontWeight: FontWeight.w400,
-                                  color: Color(0xff878383)),
+                                  color: const Color(0xff878383)),
                             ),
                           ],
                         ),
@@ -83,7 +83,7 @@ class _SearchScreenbodyState extends State<SearchScreenbody> {
                               borderRadius: BorderRadius.circular(16.r),
                               borderSide: BorderSide.none, // No border
                             ),
-                            fillColor: Color(0xffF7F7F7),
+                            fillColor: const Color(0xffF7F7F7),
 
                             filled: true, // Background color of TextField
                             hintText: 'بحث...', // Placeholder text

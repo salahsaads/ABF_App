@@ -27,7 +27,7 @@ class CustomList1 extends StatelessWidget {
         itemBuilder: (context, index) {
           return  GestureDetector( 
             onTap: () => Navigator.pushNamed(context, 'details'),
-            child: CustomListItem());
+            child: const CustomListItem());
         },
       ),
     );

@@ -23,14 +23,14 @@ class DetailsScreen extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Icon(Icons.favorite_outline_rounded),
+                  const Icon(Icons.favorite_outline_rounded),
                   Text(
                     'تفاصيل المنتج',
                     style: GoogleFonts.almarai(
                         textStyle: TextStyle(
                             fontSize: 17.sp, fontWeight: FontWeight.w800)),
                   ),
-                  Icon(
+                  const Icon(
                     Icons.arrow_forward,
                     color: Color(0xff1D75B1),
                   )
@@ -45,7 +45,7 @@ class DetailsScreen extends StatelessWidget {
                     height: 65.h,
                     decoration: BoxDecoration(
                       border: Border.all(width: 1, color: Colors.black),
-                      image: DecorationImage(
+                      image: const DecorationImage(
                           image: AssetImage(
                         'assets/44.png',
                       )),
@@ -56,34 +56,34 @@ class DetailsScreen extends StatelessWidget {
                     width: 75.w,
                     height: 65.h,
                     decoration: BoxDecoration(
-                        image: DecorationImage(
+                        image: const DecorationImage(
                             image: AssetImage(
                           'assets/444.png',
                         )),
                         borderRadius: BorderRadius.circular(15.r),
-                        color: Color(0xfff4f4f4)),
+                        color: const Color(0xfff4f4f4)),
                   ),
                   Container(
                     width: 75.w,
                     height: 65.h,
                     decoration: BoxDecoration(
-                        image: DecorationImage(
+                        image: const DecorationImage(
                             image: AssetImage(
                           'assets/4444.png',
                         )),
                         borderRadius: BorderRadius.circular(15.r),
-                        color: Color(0xfff4f4f4)),
+                        color: const Color(0xfff4f4f4)),
                   ),
                   Container(
                     width: 75.w,
                     height: 65.h,
                     decoration: BoxDecoration(
-                        image: DecorationImage(
+                        image: const DecorationImage(
                             image: AssetImage(
                           'assets/44445.png',
                         )),
                         borderRadius: BorderRadius.circular(15.r),
-                        color: Color(0xfff4f4f4)),
+                        color: const Color(0xfff4f4f4)),
                   )
                 ],
               ),
@@ -165,6 +165,11 @@ class DetailsScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
+                    width: 100.w,
+                    height: 104.h,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.r),
+                        border: Border.all(color: const Color(0xff1D75B1))),
                     child: Padding(
                       padding: const EdgeInsets.only(bottom: 15),
                       child: Column(
@@ -191,13 +196,13 @@ class DetailsScreen extends StatelessWidget {
                         ],
                       ),
                     ),
+                  ),
+                  Container(
                     width: 100.w,
                     height: 104.h,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10.r),
-                        border: Border.all(color: Color(0xff1D75B1))),
-                  ),
-                  Container(
+                        border: Border.all(color: const Color(0xff1D75B1))),
                     child: Padding(
                       padding: const EdgeInsets.only(bottom: 15),
                       child: Column(
@@ -229,13 +234,13 @@ class DetailsScreen extends StatelessWidget {
                         ],
                       ),
                     ),
+                  ),
+                  Container(
                     width: 100.w,
                     height: 104.h,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10.r),
-                        border: Border.all(color: Color(0xff1D75B1))),
-                  ),
-                  Container(
+                        color: const Color(0xffeff5f9)),
                     child: Padding(
                       padding: const EdgeInsets.only(bottom: 15),
                       child: Column(
@@ -263,11 +268,6 @@ class DetailsScreen extends StatelessWidget {
                         ],
                       ),
                     ),
-                    width: 100.w,
-                    height: 104.h,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.r),
-                        color: Color(0xffeff5f9)),
                   ),
                 ],
               ),
@@ -290,12 +290,12 @@ class DetailsScreen extends StatelessWidget {
                 children: [
                   Container(
                     alignment: Alignment.center,
-                    child: Icon(Icons.remove),
                     width: 30.w,
                     height: 30.w,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(5.r),
-                        border: Border.all(color: Color(0xff9a9c9f))),
+                        border: Border.all(color: const Color(0xff9a9c9f))),
+                    child: Icon(Icons.remove),
                   ),
                   SizedBox(
                     width: MediaQuery.sizeOf(context).width * .05,
@@ -311,15 +311,15 @@ class DetailsScreen extends StatelessWidget {
                   ),
                   Container(
                     alignment: Alignment.center,
-                    child: Icon(
-                      Icons.add,
-                      color: Color(0xff1D75B1),
-                    ),
                     width: 30.w,
                     height: 30.w,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(5.r),
-                        border: Border.all(color: Color(0xff1D75B1))),
+                        border: Border.all(color: const Color(0xff1D75B1))),
+                    child: Icon(
+                      Icons.add,
+                      color: Color(0xff1D75B1),
+                    ),
                   )
                 ],
               ),
@@ -327,6 +327,11 @@ class DetailsScreen extends StatelessWidget {
                 height: MediaQuery.sizeOf(context).height * .02,
               ),
               Container(
+                width: double.infinity,
+                height: 74.h,
+                decoration: BoxDecoration(
+                    color: const Color(0xff1D75B1),
+                    borderRadius: BorderRadius.circular(38.r)),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -344,11 +349,6 @@ class DetailsScreen extends StatelessWidget {
                     Image.asset('assets/shopping-cart.png')
                   ],
                 ),
-                width: double.infinity,
-                height: 74.h,
-                decoration: BoxDecoration(
-                    color: Color(0xff1D75B1),
-                    borderRadius: BorderRadius.circular(38.r)),
               ),
               SizedBox(
                 height: MediaQuery.sizeOf(context).height * .02,
@@ -362,12 +362,12 @@ class DetailsScreen extends StatelessWidget {
                         textStyle: TextStyle(
                             fontSize: 14.sp,
                             fontWeight: FontWeight.w700,
-                            color: Color(0xff000000))),
+                            color: const Color(0xff000000))),
                   ),
                   SizedBox(
                     width: MediaQuery.sizeOf(context).width * .01,
                   ),
-                  Icon(Icons.star, color: Colors.amber, size: 25.0),
+                  const Icon(Icons.star, color: Colors.amber, size: 25.0),
                 ],
               ),
               Row(
@@ -379,7 +379,7 @@ class DetailsScreen extends StatelessWidget {
                         textStyle: TextStyle(
                             fontSize: 12.sp,
                             fontWeight: FontWeight.w400,
-                            color: Color(0xff878383))),
+                            color: const Color(0xff878383))),
                   )
                 ],
               ),
@@ -399,8 +399,8 @@ class StarRating extends StatefulWidget {
   final double initialRating;
   final void Function(double rating)? onRatingChanged;
 
-  StarRating(
-      {this.maxRating = 5, this.initialRating = 0, this.onRatingChanged});
+  const StarRating(
+      {super.key, this.maxRating = 5, this.initialRating = 0, this.onRatingChanged});
 
   @override
   _StarRatingState createState() => _StarRatingState();
@@ -418,11 +418,11 @@ class _StarRatingState extends State<StarRating> {
   Widget _buildStar(int index) {
     Icon icon;
     if (index >= _currentRating) {
-      icon = Icon(Icons.star_border, color: Colors.amber, size: 25.0);
+      icon = const Icon(Icons.star_border, color: Colors.amber, size: 25.0);
     } else if (index > _currentRating - 1 && index < _currentRating) {
-      icon = Icon(Icons.star_half, color: Colors.amber, size: 25.0);
+      icon = const Icon(Icons.star_half, color: Colors.amber, size: 25.0);
     } else {
-      icon = Icon(Icons.star, color: Colors.amber, size: 25.0);
+      icon = const Icon(Icons.star, color: Colors.amber, size: 25.0);
     }
 
     return GestureDetector(
@@ -448,6 +448,8 @@ class _StarRatingState extends State<StarRating> {
 }
 
 class PageViewWithIndicator extends StatefulWidget {
+  const PageViewWithIndicator({super.key});
+
   @override
   _PageViewWithIndicatorState createState() => _PageViewWithIndicatorState();
 }
@@ -515,7 +517,7 @@ class _PageViewWithIndicatorState extends State<PageViewWithIndicator> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: List<Widget>.generate(4, (int index) {
               return AnimatedContainer(
-                duration: Duration(milliseconds: 300),
+                duration: const Duration(milliseconds: 300),
                 margin: EdgeInsets.symmetric(horizontal: 2.w),
                 height: 12.h,
                 width: _currentPage == index ? 36.w : 10.w,
