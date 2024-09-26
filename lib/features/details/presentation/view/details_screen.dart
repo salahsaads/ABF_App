@@ -13,7 +13,7 @@ class DetailsScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Appcolor.white,
       body: Padding(
-        padding: EdgeInsets.only(left: 25.w, right: 25.w),
+        padding: EdgeInsets.only(left: 5.w, right: 5.w),
         child: SingleChildScrollView(
           child: Column(
             children: [
@@ -30,9 +30,12 @@ class DetailsScreen extends StatelessWidget {
                         textStyle: TextStyle(
                             fontSize: 17.sp, fontWeight: FontWeight.w800)),
                   ),
-                  const Icon(
-                    Icons.arrow_forward,
-                    color: Color(0xff1D75B1),
+                  GestureDetector(
+                    onTap: () => Navigator.pop(context),
+                    child: const Icon(
+                      Icons.arrow_forward,
+                      color: Color(0xff1D75B1),
+                    ),
                   )
                 ],
               ),
@@ -400,7 +403,10 @@ class StarRating extends StatefulWidget {
   final void Function(double rating)? onRatingChanged;
 
   const StarRating(
-      {super.key, this.maxRating = 5, this.initialRating = 0, this.onRatingChanged});
+      {super.key,
+      this.maxRating = 5,
+      this.initialRating = 0,
+      this.onRatingChanged});
 
   @override
   _StarRatingState createState() => _StarRatingState();

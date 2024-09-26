@@ -10,9 +10,9 @@ class Custom_Item extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(5),
+      padding: const EdgeInsets.all(1),
       child: Container(
-          width: 177.w, // Fixed width for each item
+          width: 180.w, // Fixed width for each item
           height: 340.h, // Fixed height for each item
           decoration: BoxDecoration(
             color: Colors.white,
@@ -48,7 +48,6 @@ class Custom_Item extends StatelessWidget {
                   children: [Image.asset('assets/icon.png')],
                 ),
               ),
-
 
               //Rating Bar
               Padding(
@@ -89,7 +88,9 @@ class Custom_Item extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    const Icon(Icons.favorite_border),
+                    const Icon(
+                      Icons.favorite_border,
+                    ),
                     Container(
                       width: 100.w,
                       height: 32.h,
@@ -111,10 +112,11 @@ class Custom_Item extends StatelessWidget {
                                   color: const Color(0xff1D75B1)),
                             ),
                           ),
-                          SizedBox(
-                            width: MediaQuery.of(context).size.width * 0.02,
-                          ),
-                          Image.asset('assets/shopping-cart.png'),
+                          // SizedBox(
+                          //   width: MediaQuery.of(context).size.width * 0.02,
+                          // ),
+                          Icon(Icons.shopping_cart_outlined,
+                              color: const Color(0xff1D75B1)),
                         ],
                       ),
                     )

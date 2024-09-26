@@ -19,13 +19,13 @@ class CustomTitle extends StatelessWidget {
             color: Color(0xffCA7009),
           ),
           SizedBox(
-            width: MediaQuery.of(context).size.width / 200,
+            width: MediaQuery.of(context).size.width / 250,
           ),
           Text(
             'عرض المزيد',
             style: GoogleFonts.almarai(
               textStyle: TextStyle(
-                  fontSize: 14.sp,
+                  fontSize: 13.sp,
                   fontWeight: FontWeight.w400,
                   color: const Color(0xffCA7009)),
             ),
@@ -35,7 +35,7 @@ class CustomTitle extends StatelessWidget {
             title,
             style: GoogleFonts.almarai(
               textStyle: TextStyle(
-                fontSize: 18.sp,
+                fontSize: 14.sp,
                 fontWeight: FontWeight.w800,
               ),
             ),

@@ -48,10 +48,8 @@ class _HomeBodyState extends State<HomeBody> {
                 ),
                 GestureDetector(
                   onTap: () {
-
                     Navigator.pushNamed(context, 'search');
-                  }
-                  ,
+                  },
                   child: Container(
                     width: 41.0.w,
                     height: 41.0.w,
@@ -128,7 +126,7 @@ class _HomeBodyState extends State<HomeBody> {
                         'مبيعات فتحات التكييف الألومنيوم المتاحة لدينا',
                         style: GoogleFonts.almarai(
                           textStyle: TextStyle(
-                              fontSize: 14.sp,
+                              fontSize: 13.sp,
                               fontWeight: FontWeight.w400,
                               color: const Color(0xff878383)),
                         ),

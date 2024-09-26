@@ -20,7 +20,7 @@ class _CustomitembodyState extends State<Customitembody> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left: 20.w, right: 20.w, top: 45.h),
+      padding: EdgeInsets.only(left: 5.w, right: 5.w, top: 45.h),
       child: Column(
         children: [
           Row(
@@ -38,512 +38,515 @@ class _CustomitembodyState extends State<Customitembody> {
                     builder: (context) => Container(
                       // ignore: sort_child_properties_last
                       child: Padding(
-                        padding: EdgeInsets.only(left: 24.w, right: 24.w),
-                        child: Column(children: [
-                          SizedBox(
-                            height: MediaQuery.sizeOf(context).height * .05,
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            children: [
-                              Text(
-                                'فلترة النتائج',
-                                style: GoogleFonts.almarai(
-                                    textStyle: TextStyle(
-                                        fontSize: 18.sp,
-                                        fontWeight: FontWeight.w800,
-                                        color: const Color(0xff000000))),
-                              ),
-                              SizedBox(
-                                  width: 5
-                                      .w), // Add some spacing between the widgets
-                              Image.asset('assets/filter-edit_linear.png'),
-                            ],
-                          ),
-                          SizedBox(
-                            height: MediaQuery.sizeOf(context).height / 35,
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            children: [
-                              Text(
-                                'فلترة حسب النوع',
-                                style: GoogleFonts.almarai(
-                                  textStyle: TextStyle(
-                                      fontSize: 14.sp,
-                                      fontWeight: FontWeight.w700,
-                                      color: const Color(0xff878383)),
-                                ),
-                              )
-                            ],
-                          ),
-                          SizedBox(
-                            height: MediaQuery.sizeOf(context).height / 40,
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Column(
-                                children: [
-                                  Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Image.asset(
-                                          'assets/Clip path group (1).png'),
-                                      Checkbox(
-                                        activeColor: const Color(
-                                            0xffCA7009), // Checked color
-                                        value: false,
-                                        onChanged: (bool? value) {},
-                                        side: const BorderSide(
-                                          color: Color(
-                                              0xffB1B1B1), // Border color when not checked
-                                          width: 1, // Border width
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Image.asset(
-                                          'assets/Clip path group (4).png'),
-                                      Checkbox(
-                                        activeColor: const Color(
-                                            0xffCA7009), // Checked color
-                                        value: false,
-                                        onChanged: (bool? value) {
-                                          setState(() {});
-                                        },
-                                        side: const BorderSide(
-                                          color: Color(
-                                              0xffB1B1B1), // Border color when not checked
-                                          width: 1, // Border width
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                  Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Image.asset('assets/3.png'),
-                                      Checkbox(
-                                        activeColor: const Color(
-                                            0xffCA7009), // Checked color
-                                        value: false,
-                                        onChanged: (bool? value) {
-                                          setState(() {});
-                                        },
-                                        side: const BorderSide(
-                                          color: Color(
-                                              0xffB1B1B1), // Border color when not checked
-                                          width: 1, // Border width
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                  const SizedBox(
-                                    height: 50,
-                                  )
-                                ],
-                              ),
-
-////////////////////////////////////////////////
-                              ///
-
-                              Column(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Image.asset('assets/Clip path group.png'),
-                                      Checkbox(
-                                        activeColor: const Color(
-                                            0xffCA7009), // Checked color
-                                        value: false,
-                                        onChanged: (bool? value) {
-                                          setState(() {});
-                                        },
-                                        side: const BorderSide(
-                                          color: Color(
-                                              0xffB1B1B1), // Border color when not checked
-                                          width: 1, // Border width
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                  Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Image.asset(
-                                          'assets/Clip path group (3).png'),
-                                      Checkbox(
-                                        activeColor: const Color(
-                                            0xffCA7009), // Checked color
-                                        value: false,
-                                        onChanged: (bool? value) {
-                                          setState(() {});
-                                        },
-                                        side: const BorderSide(
-                                          color: Color(
-                                              0xffB1B1B1), // Border color when not checked
-                                          width: 1, // Border width
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                  Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Image.asset('assets/4.png'),
-                                      Checkbox(
-                                        activeColor: const Color(
-                                            0xffCA7009), // Checked color
-                                        value: false,
-                                        onChanged: (bool? value) {
-                                          setState(() {});
-                                        },
-                                        side: const BorderSide(
-                                          color: Color(
-                                              0xffB1B1B1), // Border color when not checked
-                                          width: 1, // Border width
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                  Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Image.asset('assets/2.png'),
-                                      Checkbox(
-                                        activeColor: const Color(
-                                            0xffCA7009), // Checked color
-                                        value: false,
-                                        onChanged: (bool? value) {
-                                          setState(() {});
-                                        },
-                                        side: const BorderSide(
-                                          color: Color(
-                                              0xffB1B1B1), // Border color when not checked
-                                          width: 1, // Border width
-                                        ),
-                                      )
-                                    ],
-                                  )
-                                ],
-                              ),
-                              //////////////////////
-                              Column(
-                                children: [
-                                  Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Image.asset('assets/icon.png'),
-                                      Checkbox(
-                                        activeColor: const Color(
-                                            0xffCA7009), // Checked color
-                                        value: false,
-                                        onChanged: (bool? value) {
-                                          setState(() {});
-                                        },
-                                        side: const BorderSide(
-                                          color: Color(
-                                              0xffB1B1B1), // Border color when not checked
-                                          width: 1, // Border width
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                  Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Image.asset(
-                                          'assets/Clip path group (2).png'),
-                                      Checkbox(
-                                        activeColor: const Color(
-                                            0xffCA7009), // Checked color
-                                        value: false,
-                                        onChanged: (bool? value) {
-                                          setState(() {});
-                                        },
-                                        side: const BorderSide(
-                                          color: Color(
-                                              0xffB1B1B1), // Border color when not checked
-                                          width: 1, // Border width
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                  Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Image.asset('assets/5.png'),
-                                      Checkbox(
-                                        activeColor: const Color(
-                                            0xffCA7009), // Checked color
-                                        value: false,
-                                        onChanged: (bool? value) {
-                                          setState(() {});
-                                        },
-                                        side: const BorderSide(
-                                          color: Color(
-                                              0xffB1B1B1), // Border color when not checked
-                                          width: 1, // Border width
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                  Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Image.asset('assets/1.png'),
-                                      Checkbox(
-                                        activeColor: const Color(
-                                            0xffCA7009), // Checked color
-                                        value: false,
-                                        onChanged: (bool? value) {
-                                          setState(() {});
-                                        },
-                                        side: const BorderSide(
-                                          color: Color(
-                                              0xffB1B1B1), // Border color when not checked
-                                          width: 1, // Border width
-                                        ),
-                                      )
-                                    ],
-                                  )
-                                ],
-                              )
-                            ],
-                          ),
-                          SizedBox(
-                            height: MediaQuery.sizeOf(context).height * .01,
-                          ),
-                          const Divider(),
-                          SizedBox(
-                            height: MediaQuery.sizeOf(context).height * .01,
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            children: [
-                              Text(
-                                ' حسب المبيعات',
-                                style: GoogleFonts.almarai(
-                                  textStyle: TextStyle(
-                                      fontSize: 14.sp,
-                                      fontWeight: FontWeight.w700,
-                                      color: const Color(0xff878383)),
-                                ),
-                              )
-                            ],
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            children: [
-                              Text(
-                                'المنتجات الأكثر مبيعا',
-                                style: GoogleFonts.almarai(
-                                    textStyle: TextStyle(
-                                        fontSize: 12.sp,
-                                        fontWeight: FontWeight.w400,
-                                        color: const Color(0xff25170B))),
-                              ),
-                              Checkbox(
-                                activeColor:
-                                    const Color(0xffCA7009), // Checked color
-                                value: false,
-                                onChanged: (bool? value) {
-                                  setState(() {});
-                                },
-                                side: const BorderSide(
-                                  color: Color(
-                                      0xffB1B1B1), // Border color when not checked
-                                  width: 1, // Border width
-                                ),
-                              )
-                            ],
-                          ),
-                          SizedBox(
-                            height: MediaQuery.sizeOf(context).height * .01,
-                          ),
-                          const Divider(),
-                          SizedBox(
-                            height: MediaQuery.sizeOf(context).height * .01,
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            children: [
-                              Text(
-                                'حسب السعر',
-                                style: GoogleFonts.almarai(
-                                  textStyle: TextStyle(
-                                      fontSize: 14.sp,
-                                      fontWeight: FontWeight.w700,
-                                      color: const Color(0xff878383)),
-                                ),
-                              )
-                            ],
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment
-                                .spaceBetween, // Space between the options
-                            children: [
-                              Row(
-                                children: [
-                                  Text(
-                                    'من الأعلى إلى الأقل سعرا',
-                                    style: GoogleFonts.almarai(
-                                      textStyle: TextStyle(
-                                          fontSize: 10.sp,
-                                          fontWeight: FontWeight.w400,
-                                          color: _selectedValue == 1
-                                              ? const Color(0xff25170B)
-                                              : const Color(0xff1D75B1)),
-                                    ),
-                                  ),
-                                  Radio(
-                                    value: 0,
-                                    groupValue: _selectedValue,
-                                    onChanged: (int? value) {
-                                      setState(() {
-                                        _selectedValue = value!;
-                                      });
-                                    },
-                                  ),
-                                ],
-                              ),
-                              Row(
-                                children: [
-                                  Text(
-                                    'من الأقل إلى الأعلى سعرا',
-                                    style: GoogleFonts.almarai(
-                                      textStyle: TextStyle(
-                                          fontSize: 10.sp,
-                                          fontWeight: FontWeight.w400,
-                                          color: _selectedValue == 0
-                                              ? const Color(0xff25170B)
-                                              : const Color(0xff1D75B1)),
-                                    ),
-                                  ),
-                                  Radio(
-                                    value: 1,
-                                    groupValue: _selectedValue,
-                                    onChanged: (int? value) {
-                                      setState(() {
-                                        _selectedValue = value!;
-                                      });
-                                    },
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                          SizedBox(
-                            height: MediaQuery.sizeOf(context).height * .01,
-                          ),
-                          const Divider(),
-                          SizedBox(
-                            height: MediaQuery.sizeOf(context).height * .01,
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            children: [
-                              Text(
-                                ' حسب التقييم',
-                                style: GoogleFonts.almarai(
-                                  textStyle: TextStyle(
-                                      fontSize: 14.sp,
-                                      fontWeight: FontWeight.w700,
-                                      color: const Color(0xff878383)),
-                                ),
-                              )
-                            ],
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment
-                                .spaceBetween, // Space between the options
-                            children: [
-                              Row(
-                                children: [
-                                  Text(
-                                    'من الأعلى إلى الأقل تقييما',
-                                    style: GoogleFonts.almarai(
-                                      textStyle: TextStyle(
-                                          fontSize: 10.sp,
-                                          fontWeight: FontWeight.w400,
-                                          color: _selectedValue == 1
-                                              ? const Color(0xff25170B)
-                                              : const Color(0xff1D75B1)),
-                                    ),
-                                  ),
-                                  Radio(
-                                    value: 0,
-                                    groupValue: _selectedValue2,
-                                    onChanged: (int? value) {
-                                      setState(() {
-                                        _selectedValue2 = value!;
-                                      });
-                                    },
-                                  ),
-                                ],
-                              ),
-                              Row(
-                                children: [
-                                  Text(
-                                    'من الأقل إلى الأعلى تقييما',
-                                    style: GoogleFonts.almarai(
-                                      textStyle: TextStyle(
-                                          fontSize: 10.sp,
-                                          fontWeight: FontWeight.w400,
-                                          color: _selectedValue2 == 0
-                                              ? const Color(0xff25170B)
-                                              : const Color(0xff1D75B1)),
-                                    ),
-                                  ),
-                                  Radio(
-                                    value: 1,
-                                    groupValue: _selectedValue2,
-                                    onChanged: (int? value) {
-                                      setState(() {
-                                        _selectedValue2 = value!;
-                                      });
-                                    },
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                          Container(
-                            alignment: Alignment.center,
-                            width: double.infinity,
-                            height: 65.h,
-                            decoration: BoxDecoration(
-                                color: const Color(0xff1D75B1),
-                                borderRadius: BorderRadius.circular(35.r)),
-                            child: Text(
-                              'فلترة',
-                              style: GoogleFonts.almarai(
-                                textStyle: TextStyle(
-                                    fontSize: 18.sp,
-                                    fontWeight: FontWeight.w700,
-                                    color: const Color(0xffffffff)),
-                              ),
+                        padding: EdgeInsets.only(left: 4.w, right: 4.w),
+                        child: SingleChildScrollView(
+                          child: Column(children: [
+                            SizedBox(
+                              height: MediaQuery.sizeOf(context).height * .05,
                             ),
-                          )
-                        ]),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: [
+                                Text(
+                                  'فلترة النتائج',
+                                  style: GoogleFonts.almarai(
+                                      textStyle: TextStyle(
+                                          fontSize: 18.sp,
+                                          fontWeight: FontWeight.w800,
+                                          color: const Color(0xff000000))),
+                                ),
+                                SizedBox(
+                                    width: 5
+                                        .w), // Add some spacing between the widgets
+                                Image.asset('assets/filter-edit_linear.png'),
+                              ],
+                            ),
+                            SizedBox(
+                              height: MediaQuery.sizeOf(context).height / 35,
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: [
+                                Text(
+                                  'فلترة حسب النوع',
+                                  style: GoogleFonts.almarai(
+                                    textStyle: TextStyle(
+                                        fontSize: 14.sp,
+                                        fontWeight: FontWeight.w700,
+                                        color: const Color(0xff878383)),
+                                  ),
+                                )
+                              ],
+                            ),
+                            SizedBox(
+                              height: MediaQuery.sizeOf(context).height / 40,
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Column(
+                                  children: [
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Image.asset(
+                                            'assets/Clip path group (1).png'),
+                                        Checkbox(
+                                          activeColor: const Color(
+                                              0xffCA7009), // Checked color
+                                          value: false,
+                                          onChanged: (bool? value) {},
+                                          side: const BorderSide(
+                                            color: Color(
+                                                0xffB1B1B1), // Border color when not checked
+                                            width: 1, // Border width
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Image.asset(
+                                            'assets/Clip path group (4).png'),
+                                        Checkbox(
+                                          activeColor: const Color(
+                                              0xffCA7009), // Checked color
+                                          value: false,
+                                          onChanged: (bool? value) {
+                                            setState(() {});
+                                          },
+                                          side: const BorderSide(
+                                            color: Color(
+                                                0xffB1B1B1), // Border color when not checked
+                                            width: 1, // Border width
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Image.asset('assets/3.png'),
+                                        Checkbox(
+                                          activeColor: const Color(
+                                              0xffCA7009), // Checked color
+                                          value: false,
+                                          onChanged: (bool? value) {
+                                            setState(() {});
+                                          },
+                                          side: const BorderSide(
+                                            color: Color(
+                                                0xffB1B1B1), // Border color when not checked
+                                            width: 1, // Border width
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                    const SizedBox(
+                                      height: 50,
+                                    )
+                                  ],
+                                ),
+
+                                ////////////////////////////////////////////////
+                                ///
+
+                                Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Image.asset(
+                                            'assets/Clip path group.png'),
+                                        Checkbox(
+                                          activeColor: const Color(
+                                              0xffCA7009), // Checked color
+                                          value: false,
+                                          onChanged: (bool? value) {
+                                            setState(() {});
+                                          },
+                                          side: const BorderSide(
+                                            color: Color(
+                                                0xffB1B1B1), // Border color when not checked
+                                            width: 1, // Border width
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Image.asset(
+                                            'assets/Clip path group (3).png'),
+                                        Checkbox(
+                                          activeColor: const Color(
+                                              0xffCA7009), // Checked color
+                                          value: false,
+                                          onChanged: (bool? value) {
+                                            setState(() {});
+                                          },
+                                          side: const BorderSide(
+                                            color: Color(
+                                                0xffB1B1B1), // Border color when not checked
+                                            width: 1, // Border width
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Image.asset('assets/4.png'),
+                                        Checkbox(
+                                          activeColor: const Color(
+                                              0xffCA7009), // Checked color
+                                          value: false,
+                                          onChanged: (bool? value) {
+                                            setState(() {});
+                                          },
+                                          side: const BorderSide(
+                                            color: Color(
+                                                0xffB1B1B1), // Border color when not checked
+                                            width: 1, // Border width
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Image.asset('assets/2.png'),
+                                        Checkbox(
+                                          activeColor: const Color(
+                                              0xffCA7009), // Checked color
+                                          value: false,
+                                          onChanged: (bool? value) {
+                                            setState(() {});
+                                          },
+                                          side: const BorderSide(
+                                            color: Color(
+                                                0xffB1B1B1), // Border color when not checked
+                                            width: 1, // Border width
+                                          ),
+                                        )
+                                      ],
+                                    )
+                                  ],
+                                ),
+                                //////////////////////
+                                Column(
+                                  children: [
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Image.asset('assets/icon.png'),
+                                        Checkbox(
+                                          activeColor: const Color(
+                                              0xffCA7009), // Checked color
+                                          value: false,
+                                          onChanged: (bool? value) {
+                                            setState(() {});
+                                          },
+                                          side: const BorderSide(
+                                            color: Color(
+                                                0xffB1B1B1), // Border color when not checked
+                                            width: 1, // Border width
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Image.asset(
+                                            'assets/Clip path group (2).png'),
+                                        Checkbox(
+                                          activeColor: const Color(
+                                              0xffCA7009), // Checked color
+                                          value: false,
+                                          onChanged: (bool? value) {
+                                            setState(() {});
+                                          },
+                                          side: const BorderSide(
+                                            color: Color(
+                                                0xffB1B1B1), // Border color when not checked
+                                            width: 1, // Border width
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Image.asset('assets/5.png'),
+                                        Checkbox(
+                                          activeColor: const Color(
+                                              0xffCA7009), // Checked color
+                                          value: false,
+                                          onChanged: (bool? value) {
+                                            setState(() {});
+                                          },
+                                          side: const BorderSide(
+                                            color: Color(
+                                                0xffB1B1B1), // Border color when not checked
+                                            width: 1, // Border width
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Image.asset('assets/1.png'),
+                                        Checkbox(
+                                          activeColor: const Color(
+                                              0xffCA7009), // Checked color
+                                          value: false,
+                                          onChanged: (bool? value) {
+                                            setState(() {});
+                                          },
+                                          side: const BorderSide(
+                                            color: Color(
+                                                0xffB1B1B1), // Border color when not checked
+                                            width: 1, // Border width
+                                          ),
+                                        )
+                                      ],
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
+                            SizedBox(
+                              height: MediaQuery.sizeOf(context).height * .01,
+                            ),
+                            const Divider(),
+                            SizedBox(
+                              height: MediaQuery.sizeOf(context).height * .01,
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: [
+                                Text(
+                                  ' حسب المبيعات',
+                                  style: GoogleFonts.almarai(
+                                    textStyle: TextStyle(
+                                        fontSize: 14.sp,
+                                        fontWeight: FontWeight.w700,
+                                        color: const Color(0xff878383)),
+                                  ),
+                                )
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: [
+                                Text(
+                                  'المنتجات الأكثر مبيعا',
+                                  style: GoogleFonts.almarai(
+                                      textStyle: TextStyle(
+                                          fontSize: 12.sp,
+                                          fontWeight: FontWeight.w400,
+                                          color: const Color(0xff25170B))),
+                                ),
+                                Checkbox(
+                                  activeColor:
+                                      const Color(0xffCA7009), // Checked color
+                                  value: false,
+                                  onChanged: (bool? value) {
+                                    setState(() {});
+                                  },
+                                  side: const BorderSide(
+                                    color: Color(
+                                        0xffB1B1B1), // Border color when not checked
+                                    width: 1, // Border width
+                                  ),
+                                )
+                              ],
+                            ),
+                            SizedBox(
+                              height: MediaQuery.sizeOf(context).height * .01,
+                            ),
+                            const Divider(),
+                            SizedBox(
+                              height: MediaQuery.sizeOf(context).height * .01,
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: [
+                                Text(
+                                  'حسب السعر',
+                                  style: GoogleFonts.almarai(
+                                    textStyle: TextStyle(
+                                        fontSize: 14.sp,
+                                        fontWeight: FontWeight.w700,
+                                        color: const Color(0xff878383)),
+                                  ),
+                                )
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment
+                                  .spaceBetween, // Space between the options
+                              children: [
+                                Row(
+                                  children: [
+                                    Text(
+                                      'من الأعلى إلى الأقل سعرا',
+                                      style: GoogleFonts.almarai(
+                                        textStyle: TextStyle(
+                                            fontSize: 10.sp,
+                                            fontWeight: FontWeight.w400,
+                                            color: _selectedValue == 1
+                                                ? const Color(0xff25170B)
+                                                : const Color(0xff1D75B1)),
+                                      ),
+                                    ),
+                                    Radio(
+                                      value: 0,
+                                      groupValue: _selectedValue,
+                                      onChanged: (int? value) {
+                                        setState(() {
+                                          _selectedValue = value!;
+                                        });
+                                      },
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    Text(
+                                      'من الأقل إلى الأعلى سعرا',
+                                      style: GoogleFonts.almarai(
+                                        textStyle: TextStyle(
+                                            fontSize: 10.sp,
+                                            fontWeight: FontWeight.w400,
+                                            color: _selectedValue == 0
+                                                ? const Color(0xff25170B)
+                                                : const Color(0xff1D75B1)),
+                                      ),
+                                    ),
+                                    Radio(
+                                      value: 1,
+                                      groupValue: _selectedValue,
+                                      onChanged: (int? value) {
+                                        setState(() {
+                                          _selectedValue = value!;
+                                        });
+                                      },
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                            SizedBox(
+                              height: MediaQuery.sizeOf(context).height * .01,
+                            ),
+                            const Divider(),
+                            SizedBox(
+                              height: MediaQuery.sizeOf(context).height * .01,
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: [
+                                Text(
+                                  ' حسب التقييم',
+                                  style: GoogleFonts.almarai(
+                                    textStyle: TextStyle(
+                                        fontSize: 14.sp,
+                                        fontWeight: FontWeight.w700,
+                                        color: const Color(0xff878383)),
+                                  ),
+                                )
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment
+                                  .spaceBetween, // Space between the options
+                              children: [
+                                Row(
+                                  children: [
+                                    Text(
+                                      'من الأعلى إلى الأقل تقييما',
+                                      style: GoogleFonts.almarai(
+                                        textStyle: TextStyle(
+                                            fontSize: 10.sp,
+                                            fontWeight: FontWeight.w400,
+                                            color: _selectedValue == 1
+                                                ? const Color(0xff25170B)
+                                                : const Color(0xff1D75B1)),
+                                      ),
+                                    ),
+                                    Radio(
+                                      value: 0,
+                                      groupValue: _selectedValue2,
+                                      onChanged: (int? value) {
+                                        setState(() {
+                                          _selectedValue2 = value!;
+                                        });
+                                      },
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    Text(
+                                      'من الأقل إلى الأعلى تقييما',
+                                      style: GoogleFonts.almarai(
+                                        textStyle: TextStyle(
+                                            fontSize: 10.sp,
+                                            fontWeight: FontWeight.w400,
+                                            color: _selectedValue2 == 0
+                                                ? const Color(0xff25170B)
+                                                : const Color(0xff1D75B1)),
+                                      ),
+                                    ),
+                                    Radio(
+                                      value: 1,
+                                      groupValue: _selectedValue2,
+                                      onChanged: (int? value) {
+                                        setState(() {
+                                          _selectedValue2 = value!;
+                                        });
+                                      },
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                            Container(
+                              alignment: Alignment.center,
+                              width: double.infinity,
+                              height: 65.h,
+                              decoration: BoxDecoration(
+                                  color: const Color(0xff1D75B1),
+                                  borderRadius: BorderRadius.circular(35.r)),
+                              child: Text(
+                                'فلترة',
+                                style: GoogleFonts.almarai(
+                                  textStyle: TextStyle(
+                                      fontSize: 18.sp,
+                                      fontWeight: FontWeight.w700,
+                                      color: const Color(0xffffffff)),
+                                ),
+                              ),
+                            )
+                          ]),
+                        ),
                       ),
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.only(
@@ -599,7 +602,7 @@ class _CustomitembodyState extends State<Customitembody> {
                     crossAxisCount: 2, // Number of items per row
                     crossAxisSpacing: 0,
                     mainAxisSpacing: 0,
-                    childAspectRatio: 177 / 354, // Item width to height ratio
+                    childAspectRatio: 177 / 345, // Item width to height ratio
                   ),
                   itemBuilder: (context, index) {
                     return const Custom_Item();

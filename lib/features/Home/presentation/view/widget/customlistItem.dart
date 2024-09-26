@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -88,6 +87,7 @@ class CustomListItem extends StatelessWidget {
                   children: [
                     const Icon(Icons.favorite_border),
                     Container(
+                      alignment: Alignment.center,
                       width: 120.w,
                       height: 32.h,
                       decoration: BoxDecoration(
@@ -97,7 +97,7 @@ class CustomListItem extends StatelessWidget {
                         ),
                       ),
                       child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                           Text(
                             'أضف للعربة',
@@ -108,10 +108,8 @@ class CustomListItem extends StatelessWidget {
                                   color: const Color(0xff1D75B1)),
                             ),
                           ),
-                          SizedBox(
-                            width: MediaQuery.of(context).size.width * 0.02,
-                          ),
-                          Image.asset('assets/shopping-cart.png'),
+                          Icon(Icons.shopping_cart_outlined,
+                              color: const Color(0xff1D75B1)),
                         ],
                       ),
                     )

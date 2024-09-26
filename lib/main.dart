@@ -1,4 +1,5 @@
 import 'package:abf_app/features/splash/widget/splach_body.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -13,10 +14,14 @@ import 'features/Search/presentation/view/SearchScreen.dart';
 import 'features/details/presentation/view/details_screen.dart';
 import 'features/forgot password/presentation/view/forgot_password.dart';
 import 'features/splash/splach_screen.dart';
+import 'package:device_preview/device_preview.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(
+      DevicePreview(
+        enabled: !kReleaseMode,
+        builder: (context) => MyApp(), // Wrap your app
+      ),
+    );
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -31,7 +36,7 @@ class MyApp extends StatelessWidget {
         // Use builder only if you need to use library outside ScreenUtilInit context
         builder: (_, child) {
           return MaterialApp(
-            home: const SplashScreen(),
+            home: Login(),
             routes: {
               '/splash': (context) => const SplashScreen(),
               'Login': (context) => const Login(),

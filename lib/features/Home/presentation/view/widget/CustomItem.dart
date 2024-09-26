@@ -1,4 +1,3 @@
-
 import 'package:abf_app/features/Home/presentation/view_model/Item_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -17,6 +16,7 @@ class CustomItem extends StatelessWidget {
           borderRadius: BorderRadius.circular(16.r),
         ),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             SizedBox(
               height: MediaQuery.of(context).size.height / 50,
@@ -25,9 +25,6 @@ class CustomItem extends StatelessWidget {
                 image: AssetImage(
               item.image,
             )),
-            SizedBox(
-              height: MediaQuery.of(context).size.height / 60,
-            ),
             Text(
               item.title,
               style: GoogleFonts.almarai(
